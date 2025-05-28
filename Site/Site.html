@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site Bem Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0056b3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .projetos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: left;
+    }
+
+    .habilidades {
+      margin-top: 30px;
+    }
+
+    .habilidades ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .habilidades li {
+      display: inline-block;
+      margin: 10px 20px;
+      font-size: 1.1em;
+    }
+
+    .contato {
+      margin-top: 40px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin: 10px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Site</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou um desenvolvedor apaixonado por tecnologia. Este site foi criado com HTML e CSS puro.</p>
+      <img src="boas_vindas.jpg" alt="Imagem Seja Bem-Vindo" />
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="projetos">
+        <div class="card">
+          <h3>Projeto 1</h3>
+          <p>Um site de portfólio com HTML, CSS e JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto 2</h3>
+          <p>Uma API em Python Flask integrada a um banco de dados.</p>
+        </div>
+        <div class="card">
+          <h3>Projeto 3</h3>
+          <p>Sistema de gerenciamento de tarefas com login e autenticação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>💻 HTML & CSS</li>
+        <li>🖥️ JavaScript</li>
+        <li>🐍 Python</li>
+        <li>📊 Power BI</li>
+        <li>📦 Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Seu Nome. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
